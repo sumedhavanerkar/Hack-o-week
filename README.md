@@ -1,3 +1,13 @@
+Name - Sumedha Vanerkar 
+PRN - 25070521245 
+
+Name - Nishika Kalamkar
+PRN - 25070521266 
+
+Name - Janvi Patil 
+PRN - 25070521268
+
+
 # Smart Student Hub — Student Productivity & Academic Management Portal
 
 **College Mini-Project | Hack-O-Week Evaluation**  
@@ -69,17 +79,7 @@ The system requires no external backend or database server. All data is persiste
 4. Open the browser and visit `http://localhost:5173`.
 
 ---
-
-## 💡 Viva Questions & Quick Answers
-
-1. **Why use Context API instead of Redux?**  
-   *Answer:* For a mini-project of this scale, Redux introduces unnecessary boilerplate (actions, reducers, store configuration). React's built-in `createContext` and `useContext` hooks cleanly share state across all three modules without adding external dependencies.
-
-2. **How does localStorage persistence work?**  
-   *Answer:* We created a custom hook `useLocalStorage(key, initialValue)` located in `src/hooks/useLocalStorage.js`. It reads from `localStorage.getItem` during initialization and automatically writes back via `useEffect` whenever state updates.
-
-3. **How does overdue deadline calculation work?**  
-   *Answer:* In `src/utils/dateUtils.js`, `isOverdue` parses the task's `YYYY-MM-DD` string, compares its timestamp against midnight of the current day (`today.setHours(0,0,0,0)`), and returns `true` only if the date is in the past and status is not `'Completed'`.
+(`today.setHours(0,0,0,0)`), and returns `true` only if the date is in the past and status is not `'Completed'`.
 
 4. **Why use CSS Modules?**  
    *Answer:* CSS Modules scope class names locally (e.g., `styles.taskCard`), preventing CSS collisions across components while keeping standard CSS syntax clean and easy to explain.
