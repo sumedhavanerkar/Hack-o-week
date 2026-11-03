@@ -1,0 +1,106 @@
+:root {
+  /* Design System - Soft Sage & Ivory Academic Atmosphere */
+  --bg-primary: #F8FAF7;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #EFF3EE;
+  --bg-highlight: #E7EFE8;
+  --bg-card-hover: #FCFDFB;
+
+  /* Typography Colors */
+  --text-main: #1C2621;
+  --text-secondary: #3D4E44;
+  --text-muted: #5E7265;
+  --text-light: #8CA093;
+
+  /* Accent Colors */
+  --primary: #2D6A4F;         /* Calm Academic Sage/Forest Green */
+  --primary-hover: #1F4D38;
+  --primary-light: #EAF3EC;
+  --primary-border: #B2D8C0;
+
+  --secondary: #1D5BB9;       /* Deep Academic Indigo */
+  --secondary-light: #EEF4FD;
+
+  /* Semantic Alerts */
+  --priority-high-bg: #FEF2F2;
+  --priority-high-text: #991B1B;
+  --priority-high-border: #FECACA;
+
+  --priority-medium-bg: #FFFBEB;
+  --priority-medium-text: #92400E;
+  --priority-medium-border: #FDE68A;
+
+  --priority-low-bg: #F0FDF4;
+  --priority-low-text: #166534;
+  --priority-low-border: #BBF7D0;
+
+  --danger-bg: #FEF2F2;
+  --danger-text: #B91C1C;
+  --danger-border: #FCA5A5;
+
+  /* UI Borders & Soft Elevation */
+  --border-color: #E2E9E2;
+  --border-focus: #2D6A4F;
+  --shadow-sm: 0 1px 3px 0 rgba(45, 106, 79, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 10px -2px rgba(45, 106, 79, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 12px 24px -4px rgba(45, 106, 79, 0.08), 0 4px 8px -4px rgba(0, 0, 0, 0.03);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Fonts */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  /* Very subtle, elegant botanical-geometric light ambient gradient and dot mesh */
+  background-image:
+    radial-gradient(#2D6A4F 0.65px, transparent 0.65px),
+    radial-gradient(ellipse at 15% 10%, rgba(220, 238, 226, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 85%, rgba(234, 243, 236, 0.6) 0%, transparent 55%),
+    linear-gradient(180deg, #F9FBF8 0%, #F5F8F4 100%);
+  background-size: 24px 24px, 100% 100%, 100% 100%, 100% 100%;
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-subtle);
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

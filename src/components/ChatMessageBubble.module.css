@@ -1,0 +1,72 @@
+.bubbleWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+  max-width: 78%;
+}
+
+.bubbleOutgoing {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.bubbleIncoming {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.metaHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.725rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+  padding: 0 0.2rem;
+}
+
+.senderName {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.roleTag {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-subtle);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.timestamp {
+  font-size: 0.68rem;
+  color: var(--text-light);
+}
+
+.messageBubble {
+  padding: 0.75rem 0.95rem;
+  border-radius: var(--radius-md);
+  font-size: 0.885rem;
+  line-height: 1.45;
+  box-shadow: var(--shadow-sm);
+  word-break: break-word;
+}
+
+.bubbleOutgoing .messageBubble {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-bottom-right-radius: 2px;
+}
+
+.bubbleIncoming .messageBubble {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 2px;
+}
+
+.messageText {
+  white-space: pre-wrap;
+  margin: 0;
+}
